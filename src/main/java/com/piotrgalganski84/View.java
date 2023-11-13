@@ -24,7 +24,7 @@ public class View {
 		}
 	}
 	
-	public List<String> getData() {
+	public List<Task> getData() {
 		return controller.getData();
 	}
 	

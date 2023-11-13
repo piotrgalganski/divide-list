@@ -5,19 +5,20 @@ import java.util.List;
 
 public class Model {
 	
-	List<String> list;
+	List<Task> list;
 	
 	public Model() {
 		list = new ArrayList<>();
 	}
 	
 	public void loadData() {
-		list.add("First entry");
-		list.add("Second entry");
-		list.add("Third entry");
+		list.add(new Task("First task"));
+		list.add(new Task("Second task"));
+		list.add(new Task("Third task"));
+		
 	}
 	
-	public List<String> getData() {
+	public List<Task> getData() {
 		return list;
 	}
 

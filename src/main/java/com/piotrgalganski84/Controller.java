@@ -21,7 +21,7 @@ public class Controller {
 		view.displayView();
 	}
 	
-	public List<String> getData() {
+	public List<Task> getData() {
 		return model.getData();
 	}
 

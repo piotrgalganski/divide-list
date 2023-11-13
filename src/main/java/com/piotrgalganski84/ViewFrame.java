@@ -24,10 +24,10 @@ public class ViewFrame extends JFrame {
 		setSize(300,300);
 		setLocationRelativeTo(null);
 		
-		DefaultListModel<String> jlistModel 
-			= new DefaultListModel<String>();
+		DefaultListModel<Task> jlistModel 
+			= new DefaultListModel<Task>();
 		jlistModel.addAll(view.getData());
-		JList<String> list = new JList<>(jlistModel);
+		JList<Task> list = new JList<>(jlistModel);
 		
 		var centralPanel = createCentralPanel(list);
 		var buttonsPanel = createButtonsPanel();
